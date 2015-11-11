@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+li{
+  list-style-type: none;
+}
+
+a, a:visited {
+   text-decoration: none;
+   color: blue;
+ }
+ input {
+  display: block;
+  margin: 5px 0 20px 0;
+  padding: 9px;
+  border: solid 1px black;
+  width: 300px;
+  background: whitesmoke;
+}
+ textarea {
+ display: block;
+ margin: 5px 0 20px 0;
+ padding: 9px;
+ width: 90%;
+ border: solid 1px black;
+ background: whitesmoke;
+}

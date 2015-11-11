@@ -1,0 +1,15 @@
+<h2><%=@post.title%></h2>
+<p><%=@post.content%></p>
+<p><%=@post.author%></p>
+<p>Created: <%= @post.created_at %>,  Last updated: <%= @post.updated_at %></p>
+
+<h3>Comments <%=link_to "+", new_post_comment_path(@post)%></h3>
+
+
+<% @post.comments.each do |comment| %>
+  <li><p> <%= link_to ">", post_comment_path(@post, comment) %> <%= comment.subject %></p>
+      <p><%= comment.content %></p>
+      <p>Author: <%= comment.author %></p>
+      <p>Created: <%= comment.created_at %>,  Last updated: <%= comment.updated_at %></p>
+  </li>
+  <% end %>
