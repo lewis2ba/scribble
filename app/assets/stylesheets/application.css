@@ -37,3 +37,10 @@ a, a:visited {
  border: solid 1px black;
  background: whitesmoke;
 }
+body{
+  background-color: #87CEFA;
+  font-family: sans-serif;
+}
+h1{
+  text-align: center;
+}
