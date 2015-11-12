@@ -39,8 +39,25 @@ a, a:visited {
 }
 body{
   background-color: #87CEFA;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-h1{
+h1, h2, h4, p{
   text-align: center;
+}
+hr{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+li{
+  text-align: center;
+  max-width: 85%;
+  margin: 0 auto;
+}
+img{
+  margin: 0 auto;
+  height: 250px;
+  border-radius: 50%;
+
 }
