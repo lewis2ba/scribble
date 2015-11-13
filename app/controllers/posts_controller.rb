@@ -3,11 +3,7 @@ class PostsController < ApplicationController
     before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   def index
-    if current_user
-      @posts = current_user.posts
-    else
       @posts = Post.all
-    end
   end
 
   def show
